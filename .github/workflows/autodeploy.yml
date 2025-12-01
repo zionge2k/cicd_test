@@ -23,6 +23,7 @@ jobs:
         run: |
           mkdir -p src/main/resources || true
           echo "${{ secrets.APPLICATION_YML }}" > ./src/main/resources/applicaiton.yml
+          cat ./src/main/resources/applicaiton.yml
       #          ls -al ./src/main/resources
       #          cat ./src/main/resources/applicaiton.yml
 
