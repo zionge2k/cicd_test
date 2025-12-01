@@ -25,4 +25,10 @@ jobs:
         run : |
           cat test.txt
           echo "파일이 성공적으로 생성되었습니다."
+
+      - name: Gihub Variable 사용하기
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          
           
