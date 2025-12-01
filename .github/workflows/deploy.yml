@@ -12,3 +12,17 @@ jobs:
     steps:
       - name: simple-web
         run : echo "This is the first CI/CD step"
+
+      - name: test-1
+        run : |
+          pwd
+          ls -al
+
+      - name: 파일 생성
+        run : echo "Hello, World!" > test.txt
+
+      - name: test-2
+        run : |
+          cat test.txt
+          echo "파일이 성공적으로 생성되었습니다."
+          
