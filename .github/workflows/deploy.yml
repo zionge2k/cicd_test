@@ -33,6 +33,6 @@ jobs:
 
       - name: Github Secret 사용하기
         run: |
-          echo ${{MY_ENV_NAME}}
-          echo ${{MY_ENV_PASSWORD}}
+          echo ${{secrets.MY_ENV_NAME}}
+          echo ${{secrets.MY_ENV_PASSWORD}}
           
