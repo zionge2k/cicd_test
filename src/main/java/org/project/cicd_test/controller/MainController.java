@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController {
     @GetMapping
     public String main() {
-        return "Welcome to the CI/CD Test Application!";
+        return "Welcome to the CI/CD Test Application! --update v1.0.1";
     }
 }
